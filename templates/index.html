@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness AI</title>
+</head>
+<body>
+
+<h2>Enter Your Details</h2>
+
+<form action="/predict" method="post">
+
+    Age: <input name="age"><br><br>
+    Weight: <input name="weight"><br><br>
+    Height: <input name="height"><br><br>
+    Duration: <input name="duration"><br><br>
+    Heart Rate: <input name="heart_rate"><br><br>
+    Body Temp: <input name="body_temp"><br><br>
+
+    Gender:
+    <select name="gender">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+    </select><br><br>
+
+    Goal:
+    <select name="goal">
+        <option value="weight_loss">Weight Loss</option>
+        <option value="muscle_gain">Muscle Gain</option>
+    </select><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+</body>
+</html>
